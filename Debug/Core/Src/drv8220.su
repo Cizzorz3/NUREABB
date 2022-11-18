@@ -1,0 +1,3 @@
+../Core/Src/drv8220.c:15:6:motor_init	16	static
+../Core/Src/drv8220.c:31:6:motor_start	16	static
+../Core/Src/drv8220.c:63:6:motor_stop	16	static

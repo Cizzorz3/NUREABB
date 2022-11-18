@@ -1,0 +1,8 @@
+../Core/Src/pot.c:7:6:pot_init	16	static
+../Core/Src/pot.c:13:6:pot_update	24	static
+../Core/Src/pot.c:22:10:pot_val_get	16	static
+../Core/Src/pot.c:31:6:pot_min_val_set	16	static
+../Core/Src/pot.c:35:10:pot_min_val_get	16	static
+../Core/Src/pot.c:39:6:pot_max_val_set	16	static
+../Core/Src/pot.c:44:9:pot_max_val_get	16	static
+../Core/Src/pot.c:48:6:pot_create	16	static
