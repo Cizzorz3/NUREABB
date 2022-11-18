@@ -8,28 +8,30 @@
  * @retval 			- uint8_t returns the status of the operation
  * Note				- None
  */
-uint8_t cs_init         (cs_config * cs_CONFIG , uint8_t adc_pin);
-/**================================================================
- * @Fn				- cs_update
- * @brief 			- updates the current sensor value
- * @param [in]      - *cs_CONFIG pointer for the cs_config struct which contains all the current sensor parametrs
- * @retval 			- uint8_t returns the status of the operation
- * Note				- None
- */
-uint8_t cs_update  (cs_config * cs_CONFIG);
-/**================================================================
- * @Fn				- cs_val_get
- * @brief 			- gets  the current sensor value
- * @param [in]      - *cs_CONFIG pointer for the cs_config struct which contains all the current sensor parametrs
- * @retval 			- uint8_t returns the status of the operation
- * Note				- None
- */
-uint8_t cs_val_get     (cs_config * cs_CONFIG);
-/**================================================================
- * @Fn				- cs_limit
- * @brief 			- limits the current sensor value
- * @param [in]      - *cs_CONFIG pointer for the cs_config struct which contains all the current sensor parametrs
- * @retval 			- uint8_t returns the status of the operation
- * Note				- None
- */
-uint8_t cs_limit        (cs_config * cs_CONFIG);
+
+void cs_init         (cs_config * cs_CONFIG , uint8_t adc_pin)
+{
+	cs_CONFIG->adc_pin = adc_pin;
+}
+void cs_update  (cs_config * cs_CONFIG)
+{
+	//note the value of the current sensor equation have to be applied here
+	cs_CONFIG->curr_val = adc_dma_readings_get(0);
+}
+uint16_t cs_val_get     (cs_config * cs_CONFIG)
+{
+	return adc_dma_readings_get(0);
+}
+void cs_limit        (cs_config * cs_CONFIG , uint16_t limit)
+{
+	motor_config mtr_CFG ;
+	if((cs_CONFIG->curr_val)<limit)
+	{
+		//continue
+	}
+	else
+	{
+		//stop the motor
+		motor_stop(&mtr_CFG);
+	}
+}

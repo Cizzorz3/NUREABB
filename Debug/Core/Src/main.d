@@ -27,8 +27,8 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
  ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
  ../Core/Inc/dma.h ../Core/Inc/common_includes.h ../Core/Inc/pot.h \
- ../Core/Inc/dma.h ../Core/Inc/current_sensor.h ../Core/Inc/ntc.h \
- ../Core/Inc/vibrator.h ../Core/Inc/drv8220.h
+ ../Core/Inc/dma.h ../Core/Inc/current_sensor.h ../Core/Inc/drv8220.h \
+ ../Core/Inc/ntc.h ../Core/Inc/vibrator.h ../Core/Inc/drv8220.h
 ../Core/Inc/main.h:
 ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:
 ../Core/Inc/stm32f1xx_hal_conf.h:
@@ -62,6 +62,7 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Core/Inc/pot.h:
 ../Core/Inc/dma.h:
 ../Core/Inc/current_sensor.h:
+../Core/Inc/drv8220.h:
 ../Core/Inc/ntc.h:
 ../Core/Inc/vibrator.h:
 ../Core/Inc/drv8220.h:

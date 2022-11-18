@@ -1,0 +1,4 @@
+../Core/Src/vibrator.c:4:6:vib_init	16	static
+../Core/Src/vibrator.c:8:6:vib_on	16	static
+../Core/Src/vibrator.c:13:6:vib_off	16	static
+../Core/Src/vibrator.c:18:9:vib_status_get	16	static

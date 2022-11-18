@@ -24,13 +24,14 @@ uint16_t pot_val_get (pot_config  * pot_CONFIG)
 {
 
 	//0 is the channel of the pot
-	return adc_dma_readings_get(0);
+	return adc_dma_readings_get(2);
 	
 }
 
 
 void pot_min_val_set(pot_config  * pot_CONFIG , uint16_t min_value )
 {
+	//to set the min value of the
 	pot_CONFIG->min_pot_value = min_value ;
 }
 uint16_t pot_min_val_get(pot_config  * pot_CONFIG )

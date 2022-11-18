@@ -91,14 +91,23 @@ Discarded input sections
  .group         0x0000000000000000        0xc ./Core/Src/current_sensor.o
  .group         0x0000000000000000        0xc ./Core/Src/current_sensor.o
  .group         0x0000000000000000        0xc ./Core/Src/current_sensor.o
+ .group         0x0000000000000000        0xc ./Core/Src/current_sensor.o
  .text          0x0000000000000000        0x0 ./Core/Src/current_sensor.o
  .data          0x0000000000000000        0x0 ./Core/Src/current_sensor.o
  .bss           0x0000000000000000        0x0 ./Core/Src/current_sensor.o
- .debug_info    0x0000000000000000       0x76 ./Core/Src/current_sensor.o
- .debug_abbrev  0x0000000000000000       0x29 ./Core/Src/current_sensor.o
- .debug_aranges
+ .text.cs_init  0x0000000000000000       0x1c ./Core/Src/current_sensor.o
+ .text.cs_update
+                0x0000000000000000       0x1e ./Core/Src/current_sensor.o
+ .text.cs_val_get
                 0x0000000000000000       0x18 ./Core/Src/current_sensor.o
- .debug_macro   0x0000000000000000      0x32f ./Core/Src/current_sensor.o
+ .text.cs_limit
+                0x0000000000000000       0x28 ./Core/Src/current_sensor.o
+ .debug_info    0x0000000000000000      0x23e ./Core/Src/current_sensor.o
+ .debug_abbrev  0x0000000000000000      0x120 ./Core/Src/current_sensor.o
+ .debug_aranges
+                0x0000000000000000       0x38 ./Core/Src/current_sensor.o
+ .debug_ranges  0x0000000000000000       0x28 ./Core/Src/current_sensor.o
+ .debug_macro   0x0000000000000000      0x342 ./Core/Src/current_sensor.o
  .debug_macro   0x0000000000000000      0xa6c ./Core/Src/current_sensor.o
  .debug_macro   0x0000000000000000      0x227 ./Core/Src/current_sensor.o
  .debug_macro   0x0000000000000000       0x2e ./Core/Src/current_sensor.o
@@ -165,9 +174,11 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x16 ./Core/Src/current_sensor.o
  .debug_macro   0x0000000000000000      0x145 ./Core/Src/current_sensor.o
  .debug_macro   0x0000000000000000       0x1c ./Core/Src/current_sensor.o
- .debug_line    0x0000000000000000      0x857 ./Core/Src/current_sensor.o
- .debug_str     0x0000000000000000    0x8b982 ./Core/Src/current_sensor.o
+ .debug_macro   0x0000000000000000       0x16 ./Core/Src/current_sensor.o
+ .debug_line    0x0000000000000000      0x8d2 ./Core/Src/current_sensor.o
+ .debug_str     0x0000000000000000    0x8ba97 ./Core/Src/current_sensor.o
  .comment       0x0000000000000000       0x51 ./Core/Src/current_sensor.o
+ .debug_frame   0x0000000000000000       0xa4 ./Core/Src/current_sensor.o
  .ARM.attributes
                 0x0000000000000000       0x2d ./Core/Src/current_sensor.o
  .group         0x0000000000000000        0xc ./Core/Src/dma.o
@@ -819,14 +830,22 @@ Discarded input sections
  .group         0x0000000000000000        0xc ./Core/Src/ntc.o
  .group         0x0000000000000000        0xc ./Core/Src/ntc.o
  .group         0x0000000000000000        0xc ./Core/Src/ntc.o
+ .group         0x0000000000000000        0xc ./Core/Src/ntc.o
  .text          0x0000000000000000        0x0 ./Core/Src/ntc.o
  .data          0x0000000000000000        0x0 ./Core/Src/ntc.o
  .bss           0x0000000000000000        0x0 ./Core/Src/ntc.o
- .debug_info    0x0000000000000000       0x76 ./Core/Src/ntc.o
- .debug_abbrev  0x0000000000000000       0x29 ./Core/Src/ntc.o
- .debug_aranges
+ .text.ntc_init
+                0x0000000000000000       0x1c ./Core/Src/ntc.o
+ .text.ntc_temp_update
+                0x0000000000000000       0x1e ./Core/Src/ntc.o
+ .text.ntc_temp_get
                 0x0000000000000000       0x18 ./Core/Src/ntc.o
- .debug_macro   0x0000000000000000      0x32f ./Core/Src/ntc.o
+ .debug_info    0x0000000000000000      0x198 ./Core/Src/ntc.o
+ .debug_abbrev  0x0000000000000000       0xfa ./Core/Src/ntc.o
+ .debug_aranges
+                0x0000000000000000       0x30 ./Core/Src/ntc.o
+ .debug_ranges  0x0000000000000000       0x20 ./Core/Src/ntc.o
+ .debug_macro   0x0000000000000000      0x338 ./Core/Src/ntc.o
  .debug_macro   0x0000000000000000      0xa6c ./Core/Src/ntc.o
  .debug_macro   0x0000000000000000      0x227 ./Core/Src/ntc.o
  .debug_macro   0x0000000000000000       0x2e ./Core/Src/ntc.o
@@ -893,9 +912,11 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x16 ./Core/Src/ntc.o
  .debug_macro   0x0000000000000000      0x145 ./Core/Src/ntc.o
  .debug_macro   0x0000000000000000       0x1c ./Core/Src/ntc.o
- .debug_line    0x0000000000000000      0x841 ./Core/Src/ntc.o
- .debug_str     0x0000000000000000    0x8b96c ./Core/Src/ntc.o
+ .debug_macro   0x0000000000000000       0x16 ./Core/Src/ntc.o
+ .debug_line    0x0000000000000000      0x890 ./Core/Src/ntc.o
+ .debug_str     0x0000000000000000    0x8ba37 ./Core/Src/ntc.o
  .comment       0x0000000000000000       0x51 ./Core/Src/ntc.o
+ .debug_frame   0x0000000000000000       0x80 ./Core/Src/ntc.o
  .ARM.attributes
                 0x0000000000000000       0x2d ./Core/Src/ntc.o
  .group         0x0000000000000000        0xc ./Core/Src/pot.o
@@ -1504,18 +1525,156 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x279 ./Core/Src/system_stm32f1xx.o
  .debug_macro   0x0000000000000000       0x83 ./Core/Src/system_stm32f1xx.o
  .group         0x0000000000000000        0xc ./Core/Src/vibrator.o
+ .group         0x0000000000000000        0xc ./Core/Src/vibrator.o
+ .group         0x0000000000000000        0xc ./Core/Src/vibrator.o
+ .group         0x0000000000000000        0xc ./Core/Src/vibrator.o
+ .group         0x0000000000000000        0xc ./Core/Src/vibrator.o
+ .group         0x0000000000000000        0xc ./Core/Src/vibrator.o
+ .group         0x0000000000000000        0xc ./Core/Src/vibrator.o
+ .group         0x0000000000000000        0xc ./Core/Src/vibrator.o
+ .group         0x0000000000000000        0xc ./Core/Src/vibrator.o
+ .group         0x0000000000000000        0xc ./Core/Src/vibrator.o
+ .group         0x0000000000000000        0xc ./Core/Src/vibrator.o
+ .group         0x0000000000000000        0xc ./Core/Src/vibrator.o
+ .group         0x0000000000000000        0xc ./Core/Src/vibrator.o
+ .group         0x0000000000000000        0xc ./Core/Src/vibrator.o
+ .group         0x0000000000000000        0xc ./Core/Src/vibrator.o
+ .group         0x0000000000000000        0xc ./Core/Src/vibrator.o
+ .group         0x0000000000000000        0xc ./Core/Src/vibrator.o
+ .group         0x0000000000000000        0xc ./Core/Src/vibrator.o
+ .group         0x0000000000000000        0xc ./Core/Src/vibrator.o
+ .group         0x0000000000000000        0xc ./Core/Src/vibrator.o
+ .group         0x0000000000000000        0xc ./Core/Src/vibrator.o
+ .group         0x0000000000000000        0xc ./Core/Src/vibrator.o
+ .group         0x0000000000000000        0xc ./Core/Src/vibrator.o
+ .group         0x0000000000000000        0xc ./Core/Src/vibrator.o
+ .group         0x0000000000000000        0xc ./Core/Src/vibrator.o
+ .group         0x0000000000000000        0xc ./Core/Src/vibrator.o
+ .group         0x0000000000000000        0xc ./Core/Src/vibrator.o
+ .group         0x0000000000000000        0xc ./Core/Src/vibrator.o
+ .group         0x0000000000000000        0xc ./Core/Src/vibrator.o
+ .group         0x0000000000000000        0xc ./Core/Src/vibrator.o
+ .group         0x0000000000000000        0xc ./Core/Src/vibrator.o
+ .group         0x0000000000000000        0xc ./Core/Src/vibrator.o
+ .group         0x0000000000000000        0xc ./Core/Src/vibrator.o
+ .group         0x0000000000000000        0xc ./Core/Src/vibrator.o
+ .group         0x0000000000000000        0xc ./Core/Src/vibrator.o
+ .group         0x0000000000000000        0xc ./Core/Src/vibrator.o
+ .group         0x0000000000000000        0xc ./Core/Src/vibrator.o
+ .group         0x0000000000000000        0xc ./Core/Src/vibrator.o
+ .group         0x0000000000000000        0xc ./Core/Src/vibrator.o
+ .group         0x0000000000000000        0xc ./Core/Src/vibrator.o
+ .group         0x0000000000000000        0xc ./Core/Src/vibrator.o
+ .group         0x0000000000000000        0xc ./Core/Src/vibrator.o
+ .group         0x0000000000000000        0xc ./Core/Src/vibrator.o
+ .group         0x0000000000000000        0xc ./Core/Src/vibrator.o
+ .group         0x0000000000000000        0xc ./Core/Src/vibrator.o
+ .group         0x0000000000000000        0xc ./Core/Src/vibrator.o
+ .group         0x0000000000000000        0xc ./Core/Src/vibrator.o
+ .group         0x0000000000000000        0xc ./Core/Src/vibrator.o
+ .group         0x0000000000000000        0xc ./Core/Src/vibrator.o
+ .group         0x0000000000000000        0xc ./Core/Src/vibrator.o
+ .group         0x0000000000000000        0xc ./Core/Src/vibrator.o
+ .group         0x0000000000000000        0xc ./Core/Src/vibrator.o
+ .group         0x0000000000000000        0xc ./Core/Src/vibrator.o
+ .group         0x0000000000000000        0xc ./Core/Src/vibrator.o
+ .group         0x0000000000000000        0xc ./Core/Src/vibrator.o
+ .group         0x0000000000000000        0xc ./Core/Src/vibrator.o
+ .group         0x0000000000000000        0xc ./Core/Src/vibrator.o
+ .group         0x0000000000000000        0xc ./Core/Src/vibrator.o
+ .group         0x0000000000000000        0xc ./Core/Src/vibrator.o
+ .group         0x0000000000000000        0xc ./Core/Src/vibrator.o
+ .group         0x0000000000000000        0xc ./Core/Src/vibrator.o
+ .group         0x0000000000000000        0xc ./Core/Src/vibrator.o
+ .group         0x0000000000000000        0xc ./Core/Src/vibrator.o
+ .group         0x0000000000000000        0xc ./Core/Src/vibrator.o
+ .group         0x0000000000000000        0xc ./Core/Src/vibrator.o
+ .group         0x0000000000000000        0xc ./Core/Src/vibrator.o
  .text          0x0000000000000000        0x0 ./Core/Src/vibrator.o
  .data          0x0000000000000000        0x0 ./Core/Src/vibrator.o
  .bss           0x0000000000000000        0x0 ./Core/Src/vibrator.o
- .debug_info    0x0000000000000000       0x21 ./Core/Src/vibrator.o
- .debug_abbrev  0x0000000000000000       0x13 ./Core/Src/vibrator.o
+ .text.vib_init
+                0x0000000000000000       0x1c ./Core/Src/vibrator.o
+ .text.vib_on   0x0000000000000000       0x24 ./Core/Src/vibrator.o
+ .text.vib_off  0x0000000000000000       0x24 ./Core/Src/vibrator.o
+ .text.vib_status_get
+                0x0000000000000000       0x16 ./Core/Src/vibrator.o
+ .debug_info    0x0000000000000000      0x286 ./Core/Src/vibrator.o
+ .debug_abbrev  0x0000000000000000      0x149 ./Core/Src/vibrator.o
  .debug_aranges
-                0x0000000000000000       0x18 ./Core/Src/vibrator.o
- .debug_macro   0x0000000000000000       0x11 ./Core/Src/vibrator.o
+                0x0000000000000000       0x38 ./Core/Src/vibrator.o
+ .debug_ranges  0x0000000000000000       0x28 ./Core/Src/vibrator.o
+ .debug_macro   0x0000000000000000      0x32f ./Core/Src/vibrator.o
  .debug_macro   0x0000000000000000      0xa6c ./Core/Src/vibrator.o
- .debug_line    0x0000000000000000       0x37 ./Core/Src/vibrator.o
- .debug_str     0x0000000000000000     0x2c96 ./Core/Src/vibrator.o
+ .debug_macro   0x0000000000000000      0x227 ./Core/Src/vibrator.o
+ .debug_macro   0x0000000000000000       0x2e ./Core/Src/vibrator.o
+ .debug_macro   0x0000000000000000       0x22 ./Core/Src/vibrator.o
+ .debug_macro   0x0000000000000000       0x22 ./Core/Src/vibrator.o
+ .debug_macro   0x0000000000000000       0x8e ./Core/Src/vibrator.o
+ .debug_macro   0x0000000000000000       0x51 ./Core/Src/vibrator.o
+ .debug_macro   0x0000000000000000      0x103 ./Core/Src/vibrator.o
+ .debug_macro   0x0000000000000000       0x6a ./Core/Src/vibrator.o
+ .debug_macro   0x0000000000000000      0x1df ./Core/Src/vibrator.o
+ .debug_macro   0x0000000000000000       0x1c ./Core/Src/vibrator.o
+ .debug_macro   0x0000000000000000       0x22 ./Core/Src/vibrator.o
+ .debug_macro   0x0000000000000000       0xbd ./Core/Src/vibrator.o
+ .debug_macro   0x0000000000000000      0xd23 ./Core/Src/vibrator.o
+ .debug_macro   0x0000000000000000     0xe09e ./Core/Src/vibrator.o
+ .debug_macro   0x0000000000000000       0x6d ./Core/Src/vibrator.o
+ .debug_macro   0x0000000000000000     0x3468 ./Core/Src/vibrator.o
+ .debug_macro   0x0000000000000000      0x174 ./Core/Src/vibrator.o
+ .debug_macro   0x0000000000000000       0x5c ./Core/Src/vibrator.o
+ .debug_macro   0x0000000000000000      0x5be ./Core/Src/vibrator.o
+ .debug_macro   0x0000000000000000      0x289 ./Core/Src/vibrator.o
+ .debug_macro   0x0000000000000000      0x1cb ./Core/Src/vibrator.o
+ .debug_macro   0x0000000000000000      0x114 ./Core/Src/vibrator.o
+ .debug_macro   0x0000000000000000      0x1b2 ./Core/Src/vibrator.o
+ .debug_macro   0x0000000000000000       0x27 ./Core/Src/vibrator.o
+ .debug_macro   0x0000000000000000      0x136 ./Core/Src/vibrator.o
+ .debug_macro   0x0000000000000000      0x1bc ./Core/Src/vibrator.o
+ .debug_macro   0x0000000000000000       0x34 ./Core/Src/vibrator.o
+ .debug_macro   0x0000000000000000       0x3c ./Core/Src/vibrator.o
+ .debug_macro   0x0000000000000000       0x57 ./Core/Src/vibrator.o
+ .debug_macro   0x0000000000000000      0x46a ./Core/Src/vibrator.o
+ .debug_macro   0x0000000000000000      0x1b5 ./Core/Src/vibrator.o
+ .debug_macro   0x0000000000000000       0x88 ./Core/Src/vibrator.o
+ .debug_macro   0x0000000000000000      0x241 ./Core/Src/vibrator.o
+ .debug_macro   0x0000000000000000      0x141 ./Core/Src/vibrator.o
+ .debug_macro   0x0000000000000000      0x8d1 ./Core/Src/vibrator.o
+ .debug_macro   0x0000000000000000      0x279 ./Core/Src/vibrator.o
+ .debug_macro   0x0000000000000000       0x83 ./Core/Src/vibrator.o
+ .debug_macro   0x0000000000000000       0x52 ./Core/Src/vibrator.o
+ .debug_macro   0x0000000000000000       0x18 ./Core/Src/vibrator.o
+ .debug_macro   0x0000000000000000       0x3c ./Core/Src/vibrator.o
+ .debug_macro   0x0000000000000000       0x34 ./Core/Src/vibrator.o
+ .debug_macro   0x0000000000000000       0x16 ./Core/Src/vibrator.o
+ .debug_macro   0x0000000000000000       0x35 ./Core/Src/vibrator.o
+ .debug_macro   0x0000000000000000      0x341 ./Core/Src/vibrator.o
+ .debug_macro   0x0000000000000000       0x10 ./Core/Src/vibrator.o
+ .debug_macro   0x0000000000000000       0x16 ./Core/Src/vibrator.o
+ .debug_macro   0x0000000000000000       0x43 ./Core/Src/vibrator.o
+ .debug_macro   0x0000000000000000       0x34 ./Core/Src/vibrator.o
+ .debug_macro   0x0000000000000000       0x10 ./Core/Src/vibrator.o
+ .debug_macro   0x0000000000000000       0x58 ./Core/Src/vibrator.o
+ .debug_macro   0x0000000000000000       0x71 ./Core/Src/vibrator.o
+ .debug_macro   0x0000000000000000       0x1c ./Core/Src/vibrator.o
+ .debug_macro   0x0000000000000000      0x12a ./Core/Src/vibrator.o
+ .debug_macro   0x0000000000000000       0x10 ./Core/Src/vibrator.o
+ .debug_macro   0x0000000000000000       0x1c ./Core/Src/vibrator.o
+ .debug_macro   0x0000000000000000       0x52 ./Core/Src/vibrator.o
+ .debug_macro   0x0000000000000000       0x22 ./Core/Src/vibrator.o
+ .debug_macro   0x0000000000000000       0x10 ./Core/Src/vibrator.o
+ .debug_macro   0x0000000000000000       0x52 ./Core/Src/vibrator.o
+ .debug_macro   0x0000000000000000       0xd5 ./Core/Src/vibrator.o
+ .debug_macro   0x0000000000000000       0x1c ./Core/Src/vibrator.o
+ .debug_macro   0x0000000000000000       0x3d ./Core/Src/vibrator.o
+ .debug_macro   0x0000000000000000       0x16 ./Core/Src/vibrator.o
+ .debug_macro   0x0000000000000000      0x145 ./Core/Src/vibrator.o
+ .debug_macro   0x0000000000000000       0x1c ./Core/Src/vibrator.o
+ .debug_line    0x0000000000000000      0x8a9 ./Core/Src/vibrator.o
+ .debug_str     0x0000000000000000    0x8ba75 ./Core/Src/vibrator.o
  .comment       0x0000000000000000       0x51 ./Core/Src/vibrator.o
+ .debug_frame   0x0000000000000000       0xa8 ./Core/Src/vibrator.o
  .ARM.attributes
                 0x0000000000000000       0x2d ./Core/Src/vibrator.o
  .text          0x0000000000000000       0x14 ./Core/Startup/startup_stm32f103c8tx.o
@@ -4268,23 +4427,23 @@ LOAD /opt/st/stm32cubeide_1.10.1/plugins/com.st.stm32cube.ide.mcu.externaltools.
  .debug_ranges  0x0000000000000900      0x158 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o
  .debug_ranges  0x0000000000000a58      0x220 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o
 
-.debug_macro    0x0000000000000000     0x1ddb
+.debug_macro    0x0000000000000000     0x1ddf
  .debug_macro   0x0000000000000000      0x32f ./Core/Src/drv8220.o
- .debug_macro   0x000000000000032f      0x373 ./Core/Src/main.o
- .debug_macro   0x00000000000006a2       0x10 ./Core/Src/main.o
- .debug_macro   0x00000000000006b2      0x1c1 ./Core/Src/stm32f1xx_hal_msp.o
- .debug_macro   0x0000000000000873      0x1cb ./Core/Src/stm32f1xx_it.o
- .debug_macro   0x0000000000000a3e      0x1b7 ./Core/Src/system_stm32f1xx.o
- .debug_macro   0x0000000000000bf5      0x1db ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
- .debug_macro   0x0000000000000dd0      0x1d4 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
- .debug_macro   0x0000000000000fa4      0x1b7 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o
- .debug_macro   0x000000000000115b      0x1b7 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o
- .debug_macro   0x0000000000001312      0x222 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o
- .debug_macro   0x0000000000001534      0x1c9 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o
- .debug_macro   0x00000000000016fd      0x1b7 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o
- .debug_macro   0x00000000000018b4      0x1b8 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o
- .debug_macro   0x0000000000001a6c      0x1b7 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o
- .debug_macro   0x0000000000001c23      0x1b8 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o
+ .debug_macro   0x000000000000032f      0x377 ./Core/Src/main.o
+ .debug_macro   0x00000000000006a6       0x10 ./Core/Src/main.o
+ .debug_macro   0x00000000000006b6      0x1c1 ./Core/Src/stm32f1xx_hal_msp.o
+ .debug_macro   0x0000000000000877      0x1cb ./Core/Src/stm32f1xx_it.o
+ .debug_macro   0x0000000000000a42      0x1b7 ./Core/Src/system_stm32f1xx.o
+ .debug_macro   0x0000000000000bf9      0x1db ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
+ .debug_macro   0x0000000000000dd4      0x1d4 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+ .debug_macro   0x0000000000000fa8      0x1b7 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o
+ .debug_macro   0x000000000000115f      0x1b7 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o
+ .debug_macro   0x0000000000001316      0x222 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o
+ .debug_macro   0x0000000000001538      0x1c9 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o
+ .debug_macro   0x0000000000001701      0x1b7 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o
+ .debug_macro   0x00000000000018b8      0x1b8 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o
+ .debug_macro   0x0000000000001a70      0x1b7 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o
+ .debug_macro   0x0000000000001c27      0x1b8 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o
 
 .debug_line     0x0000000000000000     0xe00b
  .debug_line    0x0000000000000000      0x8c2 ./Core/Src/drv8220.o
