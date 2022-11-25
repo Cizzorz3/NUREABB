@@ -1,7 +1,5 @@
 #include "ntc.h"
 
-
-
 void  ntc_init        (ntc_config * ntc_CONFIG , uint8_t ntc_pin)
 {
 	ntc_CONFIG->adc_pin = ntc_pin;

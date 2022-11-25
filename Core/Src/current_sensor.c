@@ -11,27 +11,34 @@
 
 void cs_init         (cs_config * cs_CONFIG , uint8_t adc_pin)
 {
+	//adc_pin == channel
 	cs_CONFIG->adc_pin = adc_pin;
 }
 void cs_update  (cs_config * cs_CONFIG)
 {
 	//note the value of the current sensor equation have to be applied here
+	//adc_pin == channel
 	cs_CONFIG->curr_val = adc_dma_readings_get(0);
 }
 uint16_t cs_val_get     (cs_config * cs_CONFIG)
 {
 	return adc_dma_readings_get(0);
 }
-void cs_limit        (cs_config * cs_CONFIG , uint16_t limit)
+//return true or false
+uint8_t cs_max_limit        (cs_config * cs_CONFIG , uint16_t limit)
 {
-	motor_config mtr_CFG ;
+	//motor_config mtr_CFG ;
 	if((cs_CONFIG->curr_val)<limit)
 	{
 		//continue
+		return TRUE ;
+		//return true
 	}
 	else
 	{
 		//stop the motor
-		motor_stop(&mtr_CFG);
+		//motor_stop(&mtr_CFG);
+		//return false to the service layer
+		return FALSE ;
 	}
 }

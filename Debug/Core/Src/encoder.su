@@ -1,4 +1,4 @@
-../Core/Src/encoder.c:4:6:en_init	16	static
-../Core/Src/encoder.c:15:6:en_counts_set	16	static
-../Core/Src/encoder.c:19:9:en_counts_get	16	static
-../Core/Src/encoder.c:25:6:en_exti	16	static
+../Core/Src/encoder.c:12:6:en_init	16	static
+../Core/Src/encoder.c:28:6:en_counts_set	16	static
+../Core/Src/encoder.c:40:9:en_counts_get	16	static
+../Core/Src/encoder.c:46:6:HAL_GPIO_EXTI_Callback	16	static

@@ -20,7 +20,7 @@ typedef struct
 void cs_init         (cs_config * cs_CONFIG , uint8_t adc_pin);
 void cs_update  (cs_config * cs_CONFIG);
 uint16_t cs_val_get     (cs_config * cs_CONFIG);
-void cs_limit        (cs_config * cs_CONFIG , uint16_t limit);
+uint8_t cs_max_limit        (cs_config * cs_CONFIG , uint16_t limit);
 
 
 #endif

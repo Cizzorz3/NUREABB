@@ -1,3 +1,3 @@
-../Core/Src/ntc.c:5:7:ntc_init	16	static
-../Core/Src/ntc.c:9:7:ntc_temp_update	16	static
-../Core/Src/ntc.c:14:10:ntc_temp_get	16	static
+../Core/Src/ntc.c:3:7:ntc_init	16	static
+../Core/Src/ntc.c:7:7:ntc_temp_update	16	static
+../Core/Src/ntc.c:12:10:ntc_temp_get	16	static

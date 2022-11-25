@@ -1,8 +1,8 @@
-../Core/Src/pot.c:7:6:pot_init	16	static
-../Core/Src/pot.c:13:6:pot_update	24	static
-../Core/Src/pot.c:23:10:pot_val_get	16	static
-../Core/Src/pot.c:32:6:pot_min_val_set	16	static
-../Core/Src/pot.c:37:10:pot_min_val_get	16	static
-../Core/Src/pot.c:41:6:pot_max_val_set	16	static
-../Core/Src/pot.c:46:9:pot_max_val_get	16	static
-../Core/Src/pot.c:50:6:pot_create	16	static
+../Core/Src/pot.c:16:6:pot_init	16	static
+../Core/Src/pot.c:29:6:pot_update	24	static
+../Core/Src/pot.c:46:10:pot_val_get	16	static
+../Core/Src/pot.c:61:6:pot_min_val_set	16	static
+../Core/Src/pot.c:73:10:pot_min_val_get	16	static
+../Core/Src/pot.c:85:6:pot_max_val_set	16	static
+../Core/Src/pot.c:97:9:pot_max_val_get	16	static
+../Core/Src/pot.c:109:6:pot_create	16	static

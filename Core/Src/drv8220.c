@@ -1,7 +1,4 @@
 #include "drv8220.h"
-
-
-
 /**================================================================
  * @Fn				- motor_init
  * @brief 			- Initilaizes the motor driver
@@ -18,6 +15,9 @@ void motor_init(motor_config* motor_definition ,uint8_t out1 , uint8_t out2 , ui
     motor_definition->out_2 = out2;
     motor_definition->direction_set = direction;
     motor_definition->status = STOP;
+
+    HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_1);
+    HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_2);
     //note pwm is fixed ىneed to be passed directly to the function
 }
 /**================================================================
@@ -30,8 +30,7 @@ void motor_init(motor_config* motor_definition ,uint8_t out1 , uint8_t out2 , ui
  */
 void motor_start(motor_config* motor_definition , uint8_t direction)
 {
-    HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_1);
-    HAL_TIM_PWM_Start(&htim4, TIM_CHANNEL_2);
+
     //Duty cycle = CCR/ARR 
     //IN1 1 
     //IN2  0 
@@ -40,7 +39,7 @@ void motor_start(motor_config* motor_definition , uint8_t direction)
     {
         TIM4->CCR1 = 50;
         TIM4->CCR2 = 0 ;
-        
+        motor_definition->status = CW_MOV;
     }
     //IN1  0 
     //IN2  1 
@@ -49,9 +48,11 @@ void motor_start(motor_config* motor_definition , uint8_t direction)
     {
         TIM4->CCR1 = 0;
         TIM4->CCR2 = 50 ;
+        motor_definition->status = CCW_MOV;
 
 
     }
+
 }
 /**================================================================
  * @Fn				- motor_stop
@@ -65,6 +66,7 @@ void motor_stop(motor_config* motor_definition )
     //IN1           1
     //IN2           1
     //Brakes
-        TIM4->CCR1 = 50;
-        TIM4->CCR2 = 50 ;
+        TIM4->CCR1 = 5000;
+        TIM4->CCR2 = 5000 ;
+        motor_definition->status = STOP;
 }

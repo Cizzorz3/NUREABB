@@ -1,4 +1,4 @@
 ../Core/Src/current_sensor.c:12:6:cs_init	16	static
-../Core/Src/current_sensor.c:16:6:cs_update	16	static
-../Core/Src/current_sensor.c:21:10:cs_val_get	16	static
-../Core/Src/current_sensor.c:25:6:cs_limit	24	static
+../Core/Src/current_sensor.c:17:6:cs_update	16	static
+../Core/Src/current_sensor.c:23:10:cs_val_get	16	static
+../Core/Src/current_sensor.c:28:9:cs_max_limit	16	static
