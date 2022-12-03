@@ -68,7 +68,9 @@ static void MX_TIM4_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
+//uint16_t curr_sens =0 ;
+int16_t pot_sens =0;
+//uint16_t ntc_sens = 0;
 /* USER CODE END 0 */
 
 /**
@@ -104,24 +106,39 @@ int main(void)
   MX_USART1_UART_Init();
   MX_TIM4_Init();
   /* USER CODE BEGIN 2 */
-  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_3, RESET);
+  //HAL_GPIO_WritePin(GPIOB, GPIO_PIN_3, RESET);
 
- motor_config mtr_CNFG;
- mtr_CNFG.direction_set = CW_MOV;
- mtr_CNFG.out_1 = 6;
- mtr_CNFG.out_2 = 7;
-  motor_init(&mtr_CNFG, 6, 7, CW_MOV);
-  motor_start(&mtr_CNFG , CW_MOV);
+// motor_config mtr_CNFG;
+// mtr_CNFG.direction_set = CW_MOV;
+// mtr_CNFG.out_1 = 6;
+// mtr_CNFG.out_2 = 7;
+ // motor_init(&mtr_CNFG, 6, 7, CW_MOV);
+ // motor_start(&mtr_CNFG , CW_MOV);
   //HAL_Delay(2000);
   //motor_start(&mtr_CNFG , CCW_MOV);
   //HAL_Delay(2000);
+
+// cs_config CS_CNFG;
+// pot_config POT_CNFG;
+//// ntc_config NTC_CNFG;
+// vib_config VIB_CNFG;
+
+
+ //dma_init();
+// vib_off(&VIB_CNFG);
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  motor_start(&mtr_CNFG , CW_MOV);
+//	  vib_on(&VIB_CNFG);
+//	  HAL_Delay(2000);
+
+	//  curr_sens= cs_val_get(&CS_CNFG);
+	 // pot_sens= pot_val_get(&POT_CNFG);
+	//  ntc_sens=  ntc_temp_get(&NTC_CNFG);
+	//  motor_start(&mtr_CNFG , CW_MOV);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -198,7 +215,7 @@ static void MX_ADC1_Init(void)
   hadc1.Init.DiscontinuousConvMode = DISABLE;
   hadc1.Init.ExternalTrigConv = ADC_SOFTWARE_START;
   hadc1.Init.DataAlign = ADC_DATAALIGN_RIGHT;
-  hadc1.Init.NbrOfConversion = 4;
+  hadc1.Init.NbrOfConversion = 3;
   if (HAL_ADC_Init(&hadc1) != HAL_OK)
   {
     Error_Handler();
@@ -227,15 +244,6 @@ static void MX_ADC1_Init(void)
   */
   sConfig.Channel = ADC_CHANNEL_3;
   sConfig.Rank = ADC_REGULAR_RANK_3;
-  if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
-  {
-    Error_Handler();
-  }
-
-  /** Configure Regular Channel
-  */
-  sConfig.Channel = ADC_CHANNEL_4;
-  sConfig.Rank = ADC_REGULAR_RANK_4;
   if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
   {
     Error_Handler();

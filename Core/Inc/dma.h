@@ -15,7 +15,7 @@
 
 #include "common_includes.h"
 extern ADC_HandleTypeDef hadc1;
-#define ADC_CHANNEL         4
+#define ADC_CHANNEL         3
 #define NO_OF_ADC_SAMPLES   10
 
 

@@ -26,15 +26,6 @@ void observer_attach(observers_t *observer , subjects_t *subject );
  */
 void observer_detach(observers_t *observer , subjects_t *subject );
 /**================================================================
- * @Fn				- notify_observer
- * @brief 			- notifies all the observers to the specified subject
- * @param [in]      - *observer pointer for the observer config struct which contains all the observer parametrs
- * @param [in]      - *subject pointer for the subject config struct which contains all the subject parametrs
- * @retval 			- None
- * Note				- None
- */
-void notify_observer(observers_t *observer , subjects_t *subject );
-/**================================================================
  * @Fn				- get_subjet_state
  * @brief 			- gets  the state to the specified subject
  * @param [in]      - *subject pointer for the subject config struct which contains all the subject parametrs
