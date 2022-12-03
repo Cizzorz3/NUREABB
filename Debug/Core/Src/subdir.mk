@@ -10,6 +10,7 @@ C_SRCS += \
 ../Core/Src/drv8220.c \
 ../Core/Src/encoder.c \
 ../Core/Src/main.c \
+../Core/Src/modbus.c \
 ../Core/Src/nanomodbus.c \
 ../Core/Src/ntc.c \
 ../Core/Src/observer.c \
@@ -27,6 +28,7 @@ OBJS += \
 ./Core/Src/drv8220.o \
 ./Core/Src/encoder.o \
 ./Core/Src/main.o \
+./Core/Src/modbus.o \
 ./Core/Src/nanomodbus.o \
 ./Core/Src/ntc.o \
 ./Core/Src/observer.o \
@@ -44,6 +46,7 @@ C_DEPS += \
 ./Core/Src/drv8220.d \
 ./Core/Src/encoder.d \
 ./Core/Src/main.d \
+./Core/Src/modbus.d \
 ./Core/Src/nanomodbus.d \
 ./Core/Src/ntc.d \
 ./Core/Src/observer.d \
@@ -63,7 +66,7 @@ Core/Src/%.o Core/Src/%.su: ../Core/Src/%.c Core/Src/subdir.mk
 clean: clean-Core-2f-Src
 
 clean-Core-2f-Src:
-	-$(RM) ./Core/Src/current_sensor.d ./Core/Src/current_sensor.o ./Core/Src/current_sensor.su ./Core/Src/dma.d ./Core/Src/dma.o ./Core/Src/dma.su ./Core/Src/drv8220.d ./Core/Src/drv8220.o ./Core/Src/drv8220.su ./Core/Src/encoder.d ./Core/Src/encoder.o ./Core/Src/encoder.su ./Core/Src/main.d ./Core/Src/main.o ./Core/Src/main.su ./Core/Src/nanomodbus.d ./Core/Src/nanomodbus.o ./Core/Src/nanomodbus.su ./Core/Src/ntc.d ./Core/Src/ntc.o ./Core/Src/ntc.su ./Core/Src/observer.d ./Core/Src/observer.o ./Core/Src/observer.su ./Core/Src/pot.d ./Core/Src/pot.o ./Core/Src/pot.su ./Core/Src/stm32f1xx_hal_msp.d ./Core/Src/stm32f1xx_hal_msp.o ./Core/Src/stm32f1xx_hal_msp.su ./Core/Src/stm32f1xx_it.d ./Core/Src/stm32f1xx_it.o ./Core/Src/stm32f1xx_it.su ./Core/Src/syscalls.d ./Core/Src/syscalls.o ./Core/Src/syscalls.su ./Core/Src/sysmem.d ./Core/Src/sysmem.o ./Core/Src/sysmem.su ./Core/Src/system_stm32f1xx.d ./Core/Src/system_stm32f1xx.o ./Core/Src/system_stm32f1xx.su ./Core/Src/vibrator.d ./Core/Src/vibrator.o ./Core/Src/vibrator.su
+	-$(RM) ./Core/Src/current_sensor.d ./Core/Src/current_sensor.o ./Core/Src/current_sensor.su ./Core/Src/dma.d ./Core/Src/dma.o ./Core/Src/dma.su ./Core/Src/drv8220.d ./Core/Src/drv8220.o ./Core/Src/drv8220.su ./Core/Src/encoder.d ./Core/Src/encoder.o ./Core/Src/encoder.su ./Core/Src/main.d ./Core/Src/main.o ./Core/Src/main.su ./Core/Src/modbus.d ./Core/Src/modbus.o ./Core/Src/modbus.su ./Core/Src/nanomodbus.d ./Core/Src/nanomodbus.o ./Core/Src/nanomodbus.su ./Core/Src/ntc.d ./Core/Src/ntc.o ./Core/Src/ntc.su ./Core/Src/observer.d ./Core/Src/observer.o ./Core/Src/observer.su ./Core/Src/pot.d ./Core/Src/pot.o ./Core/Src/pot.su ./Core/Src/stm32f1xx_hal_msp.d ./Core/Src/stm32f1xx_hal_msp.o ./Core/Src/stm32f1xx_hal_msp.su ./Core/Src/stm32f1xx_it.d ./Core/Src/stm32f1xx_it.o ./Core/Src/stm32f1xx_it.su ./Core/Src/syscalls.d ./Core/Src/syscalls.o ./Core/Src/syscalls.su ./Core/Src/sysmem.d ./Core/Src/sysmem.o ./Core/Src/sysmem.su ./Core/Src/system_stm32f1xx.d ./Core/Src/system_stm32f1xx.o ./Core/Src/system_stm32f1xx.su ./Core/Src/vibrator.d ./Core/Src/vibrator.o ./Core/Src/vibrator.su
 
 .PHONY: clean-Core-2f-Src
 

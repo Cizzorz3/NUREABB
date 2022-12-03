@@ -1,0 +1,3 @@
+../Core/Src/modbus.c:11:9:read_serial	24	static
+../Core/Src/modbus.c:16:9:write_serial	24	static
+../Core/Src/modbus.c:21:9:start_modbus	608	static
