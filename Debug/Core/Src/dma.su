@@ -1,2 +1,2 @@
-../Core/Src/dma.c:4:6:dma_init	8	static
-../Core/Src/dma.c:8:10:adc_dma_readings_get	24	static
+../Core/Src/dma.c:11:6:dma_init	8	static
+../Core/Src/dma.c:22:10:adc_dma_readings_get	24	static

@@ -1,3 +1,4 @@
-../Core/Src/modbus.c:11:9:read_serial	24	static
-../Core/Src/modbus.c:16:9:write_serial	24	static
-../Core/Src/modbus.c:21:9:start_modbus	608	static
+../Core/Src/modbus.c:20:9:read_serial	24	static
+../Core/Src/modbus.c:35:9:write_serial	24	static
+../Core/Src/modbus.c:39:6:onError	4	static,ignoring_inline_asm
+../Core/Src/modbus.c:52:6:start_modbus	608	static

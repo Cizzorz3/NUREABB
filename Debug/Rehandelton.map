@@ -330,7 +330,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x145 ./Core/Src/dma.o
  .debug_macro   0x0000000000000000       0x1c ./Core/Src/dma.o
  .debug_macro   0x0000000000000000       0x10 ./Core/Src/dma.o
- .debug_line    0x0000000000000000      0x896 ./Core/Src/dma.o
+ .debug_line    0x0000000000000000      0x89a ./Core/Src/dma.o
  .debug_str     0x0000000000000000    0x8bd58 ./Core/Src/dma.o
  .comment       0x0000000000000000       0x51 ./Core/Src/dma.o
  .debug_frame   0x0000000000000000       0x54 ./Core/Src/dma.o
@@ -865,14 +865,15 @@ Discarded input sections
                 0x0000000000000000       0x1c ./Core/Src/modbus.o
  .text.write_serial
                 0x0000000000000000       0x1c ./Core/Src/modbus.o
+ .text.onError  0x0000000000000000        0xe ./Core/Src/modbus.o
  .rodata        0x0000000000000000        0x4 ./Core/Src/modbus.o
  .text.start_modbus
                 0x0000000000000000      0x150 ./Core/Src/modbus.o
- .debug_info    0x0000000000000000      0x7b2 ./Core/Src/modbus.o
- .debug_abbrev  0x0000000000000000      0x24f ./Core/Src/modbus.o
+ .debug_info    0x0000000000000000      0x726 ./Core/Src/modbus.o
+ .debug_abbrev  0x0000000000000000      0x226 ./Core/Src/modbus.o
  .debug_aranges
-                0x0000000000000000       0x30 ./Core/Src/modbus.o
- .debug_ranges  0x0000000000000000       0x20 ./Core/Src/modbus.o
+                0x0000000000000000       0x38 ./Core/Src/modbus.o
+ .debug_ranges  0x0000000000000000       0x28 ./Core/Src/modbus.o
  .debug_macro   0x0000000000000000      0x37c ./Core/Src/modbus.o
  .debug_macro   0x0000000000000000      0xa6c ./Core/Src/modbus.o
  .debug_macro   0x0000000000000000      0x227 ./Core/Src/modbus.o
@@ -945,10 +946,10 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x16 ./Core/Src/modbus.o
  .debug_macro   0x0000000000000000       0x20 ./Core/Src/modbus.o
  .debug_macro   0x0000000000000000       0x1c ./Core/Src/modbus.o
- .debug_line    0x0000000000000000      0x91b ./Core/Src/modbus.o
+ .debug_line    0x0000000000000000      0x932 ./Core/Src/modbus.o
  .debug_str     0x0000000000000000    0x8c02e ./Core/Src/modbus.o
  .comment       0x0000000000000000       0x51 ./Core/Src/modbus.o
- .debug_frame   0x0000000000000000       0x88 ./Core/Src/modbus.o
+ .debug_frame   0x0000000000000000       0xa8 ./Core/Src/modbus.o
  .ARM.attributes
                 0x0000000000000000       0x2d ./Core/Src/modbus.o
  .group         0x0000000000000000        0xc ./Core/Src/nanomodbus.o
@@ -1276,7 +1277,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x145 ./Core/Src/ntc.o
  .debug_macro   0x0000000000000000       0x1c ./Core/Src/ntc.o
  .debug_macro   0x0000000000000000       0x16 ./Core/Src/ntc.o
- .debug_line    0x0000000000000000      0x88e ./Core/Src/ntc.o
+ .debug_line    0x0000000000000000      0x892 ./Core/Src/ntc.o
  .debug_str     0x0000000000000000    0x8ba37 ./Core/Src/ntc.o
  .comment       0x0000000000000000       0x51 ./Core/Src/ntc.o
  .debug_frame   0x0000000000000000       0x80 ./Core/Src/ntc.o
